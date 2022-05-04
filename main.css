@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+:root {
+  --bg: #ffffff;
+  --header-color: #000000;
+  --color: #000000;
+  --bg-header: #354f52;
+  --bg-nav: #eeeeee;
+  --switch-color: #000000;
+  --switch-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.darkMode {
+  --bg: #2c2c2c;
+  --header-color: #ffffff;
+  --color: #ffffff;
+  --bg-nav: #919191;
+  --switch-color: #ffffff;
+  --switch-bg: #000000;
+}
+
+.darkMode svg {
+  fill: #ffffff;
+}
+
+.darkMode svg path {
+  fill: #ffffff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--color);
+  font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--header-color);
+  background: var(--bg-header);
+  height: 8vh;
+  width: 100%;
+  text-decoration: none;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.menuMobile {
+  display: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menuMobile div {
+  width: 25px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  margin-top: 5px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#DarkMode {
+  display: none;
+}
+
+.labelDarkMode {
+  width: 30px;
+  height: 14px;
+  background: var(--switch-bg);
+  border-radius: 7px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.checkboxBola {
+  width: 15px;
+  height: 14px;
+  border-radius: 7px;
+  background: var(--switch-color);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.menuNavegacaoMobile {
+  display: none;
+  color: var(--color);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.redesSociais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 20px;
+}
+
+.menuNavegacao {
+  padding-left: 20px;
+  height: 44px;
+  background-color: var(--bg-nav);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.6), 0 6px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.6), 0 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.menuNavegacao a {
+  color: var(--color);
+  text-decoration: none;
+  height: 34px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuNavegacao a:hover {
+  border-bottom: solid var(--bg-header);
+}
+
+.paginaAtual {
+  border-bottom: solid var(--bg-header);
+}
+
+@media (max-width: 900px) {
+  .redesSociais {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    height: 92vh;
+    width: 50vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: var(--bg-header);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .menuNavegacaoMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .paginaAtualMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menuMobile {
+    display: block;
+  }
+  .menuNavegacao {
+    display: none;
+  }
+}
+
+.redesSociais.checked {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menuMobile.checked .linha1 {
+  -webkit-transform: rotate(-45deg) translate(0px, 10px);
+          transform: rotate(-45deg) translate(0px, 10px);
+}
+
+.menuMobile.checked .linha2 {
+  opacity: 0;
+}
+
+.menuMobile.checked .linha3 {
+  -webkit-transform: rotate(45deg) translate(0px, -10px);
+          transform: rotate(45deg) translate(0px, -10px);
+}
+
+.paginaAtualMobile::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  margin-right: 5px;
+  background-color: var(--color);
+}
+/*# sourceMappingURL=main.css.map */
