@@ -60,6 +60,10 @@ header {
   position: fixed;
 }
 
+header a {
+  text-decoration: none;
+}
+
 .logo {
   margin-left: 20px;
   display: -webkit-box;
@@ -75,6 +79,7 @@ header {
 }
 
 h1 {
+  color: var(--color);
   font-size: 40px;
 }
 
