@@ -164,6 +164,116 @@ h1 {
   border-bottom: solid var(--bg-header);
 }
 
+.redesSociais.checked {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuMobile.checked .linha1 {
+  -webkit-transform: rotate(-45deg) translate(0px, 10px);
+          transform: rotate(-45deg) translate(0px, 10px);
+}
+
+.menuMobile.checked .linha2 {
+  opacity: 0;
+}
+
+.menuMobile.checked .linha3 {
+  -webkit-transform: rotate(45deg) translate(0px, -10px);
+          transform: rotate(45deg) translate(0px, -10px);
+}
+
+.paginaAtualMobile::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  margin-right: 5px;
+  background-color: var(--color);
+}
+
+section {
+  height: 87vh;
+  margin-left: 20px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section h2 {
+  font-size: 60px;
+}
+
+section p {
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mudancasEconomicas {
+  padding-top: 13vh;
+}
+
+.mudancasEconomicas img {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 680px;
+  height: 358px;
+}
+
+.brasil img {
+  width: 400px;
+  height: 600px;
+}
+
+.inflacao img {
+  width: 400px;
+  height: 602px;
+}
+
+.impactos img {
+  width: 392px;
+  height: 600px;
+}
+
+.disputa img {
+  width: 435px;
+  height: 601px;
+}
+
+@media (max-width: 1285px) {
+  .mudancasEconomicas img {
+    width: 450px;
+    height: 237px;
+  }
+  .brasil img {
+    width: 350px;
+    height: 450px;
+  }
+  .inflacao img {
+    width: 300px;
+    height: 452px;
+  }
+  .impactos img {
+    width: 300px;
+    height: 459px;
+  }
+  .disputa img {
+    width: 326px;
+    height: 450px;
+  }
+}
+
 @media (max-width: 900px) {
   .redesSociais {
     display: none;
@@ -212,59 +322,29 @@ h1 {
   .menuNavegacao {
     display: none;
   }
-}
-
-.redesSociais.checked {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menuMobile.checked .linha1 {
-  -webkit-transform: rotate(-45deg) translate(0px, 10px);
-          transform: rotate(-45deg) translate(0px, 10px);
-}
-
-.menuMobile.checked .linha2 {
-  opacity: 0;
-}
-
-.menuMobile.checked .linha3 {
-  -webkit-transform: rotate(45deg) translate(0px, -10px);
-          transform: rotate(45deg) translate(0px, -10px);
-}
-
-.paginaAtualMobile::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  margin-right: 5px;
-  background-color: var(--color);
-}
-
-section {
-  height: 87vh;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-section h2 {
-  font-size: 40px;
-}
-
-section p {
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.mudancasEconomicas {
-  padding-top: 13vh;
+  section {
+    display: block;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  section h2 {
+    font-size: 40px;
+  }
+  .mudancasEconomicas img {
+    width: 300px;
+    height: 158px;
+  }
+  .inflacao img {
+    width: 200px;
+    height: 301px;
+  }
+  .impactos img {
+    width: 200px;
+    height: 306px;
+  }
+  .disputa img {
+    width: 217px;
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
