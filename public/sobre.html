@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>*titulo*</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <title>Leaf</title>
     <link rel="stylesheet" href="../main.css">
 </head>
 <body>
     <header>
-        <h1>Lorem Ipsum</h1>
+        <div class="logo">
+            <img src="../imgs/pngcesar.png" alt="folhaLogo">
+            <h1>Leaf News</h1>
+        </div>
         <div class="menuMobile" onclick="abrirMenu()">
             <div class="linha1"></div>
             <div class="linha2"></div>
@@ -21,7 +25,7 @@
                 <div class="checkboxBola"></div>
             </label>
                 <a href="../index.html" class="menuNavegacaoMobile">Home</a>
-                <a href="sobre.html" class="menuNavegacaoMobile paginaAtualMobile">Sobre</a>
+                <a href="#" class="menuNavegacaoMobile  paginaAtualMobile">Sobre</a>
                 <a href="contato.html" class="menuNavegacaoMobile">Contato</a>
             <a href="https://www.instagram.com/?hl=pt-br">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2476 2476" width="40px" height="40px">
@@ -35,7 +39,7 @@
                 <svg clip-rule="evenodd" fill-rule="evenodd" height="40px" width="40px" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 7600 7600"  xmlns="http://www.w3.org/2000/svg">
                     <path d="M6175 0H1425C638 0 0 638 0 1425v4750c0 787 638 1425 1425 1425h4750c787 0 1425-638 1425-1425V1425C7600 638 6962 0 6175 0zm-193 4093h-711v2632H4083V4093h-461v-887h461v-565c0-740 308-1180 1180-1180h884v883h-514c-340 0-362 127-362 363l-1 498h808l-97 887z"/></svg>
             </a>
-            <a href="https://youtube.com">
+            <a href="https://youtube.com" class="youTube">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="50" height="50"
                 viewBox="0 0 50 50"
@@ -45,10 +49,13 @@
     </header>
     <nav class="menuNavegacao">
         <a href="../index.html" class="home"  onmouseenter="mousehover('sobre', true)" onmouseleave="mousehover('sobre', false)">Home</a>
-        <a href="sobre.html" class="sobre paginaAtual">Sobre</a>
-        <a href="contato.html" class="contato" onmouseenter="mousehover('sobre', true)" onmouseleave="mousehover('sobre', false)">Contato</a>
+        <a href="#" class="sobre  paginaAtual">Sobre</a>
+        <a href="contato.html" class="contato"  onmouseenter="mousehover('sobre', true)" onmouseleave="mousehover('sobre', false)">Contato</a>
     </nav>
-
+    <section class="inicio">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eveniet voluptatem atque itaque qui, magnam ipsum officia eaque vel nobis magni nihil fuga consequuntur veritatis corrupti ipsam? Quae, esse molestiae.</p>
+    </section>
     <script src="../main.js"></script>
 </body>
 </html>
