@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,100 +9,233 @@
     <title>Leaf</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
+
     <header>
+
         <div class="logo">
-            <img src="imgs/pngcesar.png" alt="folhaLogo">
+
             <a href="#mudancasEconomicas">
+
+            <img src="imgs/pngcesar.png" alt="folhaLogo">
+
                 <h1>Leaf News</h1>
+                
             </a>
+
         </div>
+
         <div class="menuMobile" onclick="abrirMenu()">
             <div class="linha1"></div>
             <div class="linha2"></div>
             <div class="linha3"></div>
         </div>
+
         <nav class="redesSociais">
-            <label for="DarkMode" class="labelDarkMode">
-                <input type="checkbox" name="DarkMode" id="DarkMode" onchange="darkMode()">
+
+            <label for="checkboxDarkMode" class="labelDarkMode">
+
+                <input type="checkbox" name="checkboxDarkMode" id="checkboxDarkMode" onchange="darkMode()">
+
                 <div class="checkboxBola"></div>
+
             </label>
-                <a href="#mudancasEconomicas" class="menuNavegacaoMobile paginaAtualMobile">Home</a>
-                <a href="public/sobre.html" class="menuNavegacaoMobile">Sobre</a>
-                <a href="public/contato.html" class="menuNavegacaoMobile">Contato</a>
-            <a href="https://www.instagram.com/?hl=pt-br">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2476 2476" width="40px" height="40px">
-                <path d="M825.4 1238c0-227.9 184.7-412.7 412.6-412.7 227.9 0 412.7 184.8 412.7 412.7 0 227.9-184.8 412.7-412.7 412.7-227.9 0-412.6-184.8-412.6-412.7m-223.1 0c0 351.1 284.6 635.7 635.7 635.7s635.7-284.6 635.7-635.7-284.6-635.7-635.7-635.7S602.3 886.9 602.3 1238m1148-660.9c0 82 66.5 148.6 148.6 148.6 82 0 148.6-66.6 148.6-148.6s-66.5-148.5-148.6-148.5-148.6 66.5-148.6 148.5M737.8 2245.7c-120.7-5.5-186.3-25.6-229.9-42.6-57.8-22.5-99-49.3-142.4-92.6-43.3-43.3-70.2-84.5-92.6-142.3-17-43.6-37.1-109.2-42.6-229.9-6-130.5-7.2-169.7-7.2-500.3s1.3-369.7 7.2-500.3c5.5-120.7 25.7-186.2 42.6-229.9 22.5-57.8 49.3-99 92.6-142.4 43.3-43.3 84.5-70.2 142.4-92.6 43.6-17 109.2-37.1 229.9-42.6 130.5-6 169.7-7.2 500.2-7.2 330.6 0 369.7 1.3 500.3 7.2 120.7 5.5 186.2 25.7 229.9 42.6 57.8 22.4 99 49.3 142.4 92.6 43.3 43.3 70.1 84.6 92.6 142.4 17 43.6 37.1 109.2 42.6 229.9 6 130.6 7.2 169.7 7.2 500.3 0 330.5-1.2 369.7-7.2 500.3-5.5 120.7-25.7 186.3-42.6 229.9-22.5 57.8-49.3 99-92.6 142.3-43.3 43.3-84.6 70.1-142.4 92.6-43.6 17-109.2 37.1-229.9 42.6-130.5 6-169.7 7.2-500.3 7.2-330.5 0-369.7-1.2-500.2-7.2M727.6 7.5c-131.8 6-221.8 26.9-300.5 57.5-81.4 31.6-150.4 74-219.3 142.8C139 276.6 96.6 345.6 65 427.1 34.4 505.8 13.5 595.8 7.5 727.6 1.4 859.6 0 901.8 0 1238s1.4 378.4 7.5 510.4c6 131.8 26.9 221.8 57.5 300.5 31.6 81.4 73.9 150.5 142.8 219.3 68.8 68.8 137.8 111.1 219.3 142.8 78.8 30.6 168.7 51.5 300.5 57.5 132.1 6 174.2 7.5 510.4 7.5 336.3 0 378.4-1.4 510.4-7.5 131.8-6 221.8-26.9 300.5-57.5 81.4-31.7 150.4-74 219.3-142.8 68.8-68.8 111.1-137.9 142.8-219.3 30.6-78.7 51.6-168.7 57.5-300.5 6-132.1 7.4-174.2 7.4-510.4s-1.4-378.4-7.4-510.4c-6-131.8-26.9-221.8-57.5-300.5-31.7-81.4-74-150.4-142.8-219.3C2199.4 139 2130.3 96.6 2049 65c-78.8-30.6-168.8-51.6-300.5-57.5-132-6-174.2-7.5-510.4-7.5-336.3 0-378.4 1.4-510.5 7.5"/></svg>
-            </a>
-            <a href="https://twitter.com/home">
-                <svg height="40px" viewBox="117.806 161.288 464.388 377.424" width="40px" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m582.194 205.976c-17.078 7.567-35.424 12.68-54.71 14.991 19.675-11.78 34.769-30.474 41.886-52.726-18.407 10.922-38.798 18.857-60.497 23.111-17.385-18.488-42.132-30.064-69.538-30.064-52.603 0-95.266 42.663-95.266 95.307a97.3 97.3 0 0 0 2.454 21.68c-79.211-3.989-149.383-41.928-196.382-99.562-8.18 14.112-12.885 30.474-12.885 47.899 0 33.05 16.833 62.236 42.377 79.314a95.051 95.051 0 0 1 -43.154-11.924v1.227c0 46.16 32.826 84.672 76.43 93.426a95.97 95.97 0 0 1 -25.095 3.313 95.929 95.929 0 0 1 -17.936-1.677c12.128 37.836 47.306 65.406 89.008 66.142-32.622 25.565-73.71 40.802-118.337 40.802-7.69 0-15.278-.45-22.743-1.33 42.173 27.06 92.24 42.807 146.029 42.807 175.275 0 271.094-145.17 271.094-271.073 0-4.09-.103-8.222-.287-12.312 18.612-13.458 34.769-30.208 47.51-49.29z" fill="#000000"/></svg>
-            </a>
-            <a href="https://facebook.com">
-                <svg clip-rule="evenodd" fill-rule="evenodd" height="40px" width="40px" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 7600 7600"  xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6175 0H1425C638 0 0 638 0 1425v4750c0 787 638 1425 1425 1425h4750c787 0 1425-638 1425-1425V1425C7600 638 6962 0 6175 0zm-193 4093h-711v2632H4083V4093h-461v-887h461v-565c0-740 308-1180 1180-1180h884v883h-514c-340 0-362 127-362 363l-1 498h808l-97 887z"/></svg>
-            </a>
-            <a href="https://youtube.com" class="youTube">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="50" height="50"
-                viewBox="0 0 50 50"
-                style=" fill:#000000;"><path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path></svg>
-            </a>
+
+            <ul class="menuNavegacaoMobile">
+
+                <li>
+                    <a href="#mudancasEconomicas" class="paginaAtualMobile">Home</a>
+                </li>
+
+                <li>
+                    <a href="public/sobre.html">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="public/contato.html">Contato</a>
+                </li>
+
+            </ul>
+
+            <ul class="redesSociaisLinks">
+
+                <li>
+                    <a href="https://www.instagram.com/?hl=pt-br">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2476 2476" width="40px" height="40px">
+                            <path
+                                d="M825.4 1238c0-227.9 184.7-412.7 412.6-412.7 227.9 0 412.7 184.8 412.7 412.7 0 227.9-184.8 412.7-412.7 412.7-227.9 0-412.6-184.8-412.6-412.7m-223.1 0c0 351.1 284.6 635.7 635.7 635.7s635.7-284.6 635.7-635.7-284.6-635.7-635.7-635.7S602.3 886.9 602.3 1238m1148-660.9c0 82 66.5 148.6 148.6 148.6 82 0 148.6-66.6 148.6-148.6s-66.5-148.5-148.6-148.5-148.6 66.5-148.6 148.5M737.8 2245.7c-120.7-5.5-186.3-25.6-229.9-42.6-57.8-22.5-99-49.3-142.4-92.6-43.3-43.3-70.2-84.5-92.6-142.3-17-43.6-37.1-109.2-42.6-229.9-6-130.5-7.2-169.7-7.2-500.3s1.3-369.7 7.2-500.3c5.5-120.7 25.7-186.2 42.6-229.9 22.5-57.8 49.3-99 92.6-142.4 43.3-43.3 84.5-70.2 142.4-92.6 43.6-17 109.2-37.1 229.9-42.6 130.5-6 169.7-7.2 500.2-7.2 330.6 0 369.7 1.3 500.3 7.2 120.7 5.5 186.2 25.7 229.9 42.6 57.8 22.4 99 49.3 142.4 92.6 43.3 43.3 70.1 84.6 92.6 142.4 17 43.6 37.1 109.2 42.6 229.9 6 130.6 7.2 169.7 7.2 500.3 0 330.5-1.2 369.7-7.2 500.3-5.5 120.7-25.7 186.3-42.6 229.9-22.5 57.8-49.3 99-92.6 142.3-43.3 43.3-84.6 70.1-142.4 92.6-43.6 17-109.2 37.1-229.9 42.6-130.5 6-169.7 7.2-500.3 7.2-330.5 0-369.7-1.2-500.2-7.2M727.6 7.5c-131.8 6-221.8 26.9-300.5 57.5-81.4 31.6-150.4 74-219.3 142.8C139 276.6 96.6 345.6 65 427.1 34.4 505.8 13.5 595.8 7.5 727.6 1.4 859.6 0 901.8 0 1238s1.4 378.4 7.5 510.4c6 131.8 26.9 221.8 57.5 300.5 31.6 81.4 73.9 150.5 142.8 219.3 68.8 68.8 137.8 111.1 219.3 142.8 78.8 30.6 168.7 51.5 300.5 57.5 132.1 6 174.2 7.5 510.4 7.5 336.3 0 378.4-1.4 510.4-7.5 131.8-6 221.8-26.9 300.5-57.5 81.4-31.7 150.4-74 219.3-142.8 68.8-68.8 111.1-137.9 142.8-219.3 30.6-78.7 51.6-168.7 57.5-300.5 6-132.1 7.4-174.2 7.4-510.4s-1.4-378.4-7.4-510.4c-6-131.8-26.9-221.8-57.5-300.5-31.7-81.4-74-150.4-142.8-219.3C2199.4 139 2130.3 96.6 2049 65c-78.8-30.6-168.8-51.6-300.5-57.5-132-6-174.2-7.5-510.4-7.5-336.3 0-378.4 1.4-510.5 7.5" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://twitter.com/home">
+                        <svg height="40px" viewBox="117.806 161.288 464.388 377.424" width="40px"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m582.194 205.976c-17.078 7.567-35.424 12.68-54.71 14.991 19.675-11.78 34.769-30.474 41.886-52.726-18.407 10.922-38.798 18.857-60.497 23.111-17.385-18.488-42.132-30.064-69.538-30.064-52.603 0-95.266 42.663-95.266 95.307a97.3 97.3 0 0 0 2.454 21.68c-79.211-3.989-149.383-41.928-196.382-99.562-8.18 14.112-12.885 30.474-12.885 47.899 0 33.05 16.833 62.236 42.377 79.314a95.051 95.051 0 0 1 -43.154-11.924v1.227c0 46.16 32.826 84.672 76.43 93.426a95.97 95.97 0 0 1 -25.095 3.313 95.929 95.929 0 0 1 -17.936-1.677c12.128 37.836 47.306 65.406 89.008 66.142-32.622 25.565-73.71 40.802-118.337 40.802-7.69 0-15.278-.45-22.743-1.33 42.173 27.06 92.24 42.807 146.029 42.807 175.275 0 271.094-145.17 271.094-271.073 0-4.09-.103-8.222-.287-12.312 18.612-13.458 34.769-30.208 47.51-49.29z"
+                                fill="#000000" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://facebook.com">
+                        <svg clip-rule="evenodd" fill-rule="evenodd" height="40px" width="40px"
+                            image-rendering="optimizeQuality" shape-rendering="geometricPrecision"
+                            text-rendering="geometricPrecision" viewBox="0 0 7600 7600"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6175 0H1425C638 0 0 638 0 1425v4750c0 787 638 1425 1425 1425h4750c787 0 1425-638 1425-1425V1425C7600 638 6962 0 6175 0zm-193 4093h-711v2632H4083V4093h-461v-887h461v-565c0-740 308-1180 1180-1180h884v883h-514c-340 0-362 127-362 363l-1 498h808l-97 887z" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://youtube.com" class="youTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                            viewBox="0 0 50 50" style=" fill:#000000;">
+                            <path
+                                d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+
+            </ul>
+
         </nav>
+
     </header>
+
     <nav class="menuNavegacao">
-        <a href="#mudancasEconomicas" class="home paginaAtual">Home</a>
-        <a href="public/sobre.html" class="sobre" onmouseenter="mousehover('index', true)" onmouseleave="mousehover('index', false)">Sobre</a>
-        <a href="public/contato.html" class="contato" onmouseenter="mousehover('index', true)" onmouseleave="mousehover('index', false)">Contato</a>
+
+        <ul>
+            <li>
+                <a href="#mudancasEconomicas" class="home paginaAtual">Home</a>
+            </li>
+            
+            <li>
+                <a href="public/sobre.html" class="sobre" onmouseenter="mousehover('index', true)"
+                    onmouseleave="mousehover('index', false)">Sobre</a>
+            </li>
+
+            <li>
+                <a href="public/contato.html" class="contato" onmouseenter="mousehover('index', true)"
+                    onmouseleave="mousehover('index', false)">Contato</a>
+            </li>
+
+        </ul>
+
     </nav>
+
     <section class="mudancasEconomicas" id="mudancasEconomicas">
+
         <div>
             <h2>Mudanças Econômicas</h2>
-            <p>O Brasil já vinha sofrendo com os impactos arrasadores no setor econômico depois de dois anos de pandemia, que poderão ser observados até 2045 de acordo com especialistas, mas a preocupação atual tanto do nosso país quanto do mundo são os conflitos entre Rússia e Ucrânia. Um conflito tão grande que gerou a guerra na Ucrânia, sendo uma "catástrofe mundial" que cortará o crescimento econômico global, disse o presidente do Banco Mundial à BBC.</p>
+            <p>O Brasil já vinha sofrendo com os impactos arrasadores no setor econômico depois de dois anos de
+                pandemia, que poderão ser observados até 2045 de acordo com especialistas, mas a preocupação atual tanto
+                do nosso país quanto do mundo são os conflitos entre Rússia e Ucrânia. Um conflito tão grande que gerou
+                a guerra na Ucrânia, sendo uma "catástrofe mundial" que cortará o crescimento econômico global, disse o
+                presidente do Banco Mundial à BBC.</p>
         </div>
-        <img src="imgs/bandeira300x158.png" srcset="imgs/bandeira300x158.png 300w, imgs/bandeira450.png 450w, imgs/bandeira680x358.png 680w">
+
+        <img src="imgs/bandeira300x158.png"
+            srcset="imgs/bandeira300x158.png 300w, imgs/bandeira450.png 450w, imgs/bandeira680x358.png 680w">
+
     </section>
+
     <section class="inflacao">
+
         <div>
             <h2>Inflação</h2>
-            <p>Com a inflação tentando se recuperar dos anos de pandemia, a Guerra da Ucrânia chegou no pior momento para abalar a condição financeira mundial, se estendendendo além das fronteiras da Ucrânia, e os aumentos nos preços globais de energia em particular "atingem mais os pobres, assim como a inflação". Afetando o Brasil principalmente nas importações de petróleo, trigo, milho, óleo de girassol e fertilizantes.</p>
+            <p>Com a inflação tentando se recuperar dos anos de pandemia, a Guerra da Ucrânia chegou no pior momento
+                para abalar a condição financeira mundial, se estendendendo além das fronteiras da Ucrânia, e os
+                aumentos nos preços globais de energia em particular "atingem mais os pobres, assim como a inflação".
+                Afetando o Brasil principalmente nas importações de petróleo, trigo, milho, óleo de girassol e
+                fertilizantes.</p>
         </div>
-        <img src="imgs/Guindastes400.png" srcset="imgs/Guindastes400.png 400w, imgs/Guindastes300.png 300w, imgs/Guindastes200.png 200w" alt="Guindastes">
+
+        <img src="imgs/Guindastes400.png"
+            srcset="imgs/Guindastes400.png 400w, imgs/Guindastes300.png 300w, imgs/Guindastes200.png 200w"
+            alt="Guindastes">
+
     </section>
+
     <section>
+
         <div>
             <h2>Exportações</h2>
-            <p>Rússia e Bielorrúsia exportam quase 31% de fertilizantes potássicos, sendo o nosso país seu maior importador, então o Brasil enfrentaria dificuldades para substituir a oferta daqueles dois países por outros fornecedores, dado o seu peso na balança comercial entre os países… Isso pode não apenas afetar preços como reduzir significativamente a safra 2022/2023 em alguns produtos, tanto pela redução da área plantada como da produtividade.</p>
+            <p>Rússia e Bielorrúsia exportam quase 31% de fertilizantes potássicos, sendo o nosso país seu maior
+                importador, então o Brasil enfrentaria dificuldades para substituir a oferta daqueles dois países por
+                outros fornecedores, dado o seu peso na balança comercial entre os países… Isso pode não apenas afetar
+                preços como reduzir significativamente a safra 2022/2023 em alguns produtos, tanto pela redução da área
+                plantada como da produtividade.</p>
         </div>
+
     </section>
+
     <section class="brasil">
+
         <div>
             <h2>Brasil</h2>
-            <p>No Brasil, a miséria aumentou este ano em relação ao ano passado. Segundo levantamento da MB Associados, o índice teve alta mais acentuada na região Nordeste.</p>
+            <p>No Brasil, a miséria aumentou este ano em relação ao ano passado. Segundo levantamento da MB Associados,
+                o índice teve alta mais acentuada na região Nordeste.</p>
         </div>
-        <img src="imgs/BandeiraBrasil400.png" srcset="imgs/BandeiraBrasil400.png 400w, imgs/BandeiraBrasil350.png 350w" alt="">
+
+        <img src="imgs/BandeiraBrasil400.png" srcset="imgs/BandeiraBrasil400.png 400w, imgs/BandeiraBrasil350.png 350w"
+            alt="">
+
     </section>
+
     <section class="impactos">
+
         <div>
             <h2>Impactos</h2>
-            <p>O conflito deve produzir impactos na economia brasileira com um aumento maior ainda nas taxas de inflação, puxadas pelas possíveis altas dos combustíveis e alimentos. A alta do petróleo por causa da guerra na Ucrânia chega ao Brasil por dois motivos: a Petrobras importa petróleo e derivados e repassa reajustes por conta da política de Preço de Paridade de Importação, adotada em 2016.</p>
+            <p>O conflito deve produzir impactos na economia brasileira com um aumento maior ainda nas taxas de
+                inflação, puxadas pelas possíveis altas dos combustíveis e alimentos. A alta do petróleo por causa da
+                guerra na Ucrânia chega ao Brasil por dois motivos: a Petrobras importa petróleo e derivados e repassa
+                reajustes por conta da política de Preço de Paridade de Importação, adotada em 2016.</p>
         </div>
-        <img src="imgs/plataformaDePetrolho392.png" srcset="imgs/plataformaDePetrolho392.png 392w, imgs/plataformaDePetrolho300.png 300w, imgs/plataformaDePetrolho200.png 200w" alt="plataformaDePetrolho">
+
+        <img src="imgs/plataformaDePetrolho392.png"
+            srcset="imgs/plataformaDePetrolho392.png 392w, imgs/plataformaDePetrolho300.png 300w, imgs/plataformaDePetrolho200.png 200w"
+            alt="plataformaDePetrolho">
+
     </section>
+
     <section class="disputa">
+
         <div>
             <h2>Disputa</h2>
-            <p>A disputa pelo gás entre a Rússia e a Ucrânia teve início em março de 2005, quando a Rússia começou a mudar radicalmente os preços para o gás natural vendido na Ucrânia. Os dois países não foram capazes de entrar num acordo para resolver a disputa, e a Rússia cortou as exportações de gás para a Ucrânia em 1º de Janeiro de 2006, o que passou a afectar vários países europeus.</p>
+            <p>A disputa pelo gás entre a Rússia e a Ucrânia teve início em março de 2005, quando a Rússia começou a
+                mudar radicalmente os preços para o gás natural vendido na Ucrânia. Os dois países não foram capazes de
+                entrar num acordo para resolver a disputa, e a Rússia cortou as exportações de gás para a Ucrânia em 1º
+                de Janeiro de 2006, o que passou a afectar vários países europeus.</p>
         </div>
-        <img src="imgs/SaidaDeFogo435.png" srcset="imgs/SaidaDeFogo435.png 435w, imgs/SaidaDeFogo326.png 326w, imgs/SaidaDeFogo217.png 217w" alt="SaidaDeFogo">
+
+        <img src="imgs/SaidaDeFogo435.png"
+            srcset="imgs/SaidaDeFogo435.png 435w, imgs/SaidaDeFogo326.png 326w, imgs/SaidaDeFogo217.png 217w"
+            alt="SaidaDeFogo">
+
     </section>
+
     <section>
+
         <div>
             <h2>Consumo</h2>
-            <p>Atualmente a Ucrânia consome por volta de 80 bilhões de metros cúbicos de gás natural por ano. Dessa quantia, a Ucrânia é responsável pela produção de 20 bilhões, compra por volta de 36 bilhões de metros cúbicos do Turcomenistão, e recebe cerca de 17 bilhões da Rússia, como pagamento pelo transporte de gás para a Europa. O resto (de 6 a 8 bilhões) é adquirido da Rússia. Segundo o CIA's World Factbook, a Ucrânia é o quarto maior importador e sexto maior consumidor de gás natural do mundo.</p>
+            <p>Atualmente a Ucrânia consome por volta de 80 bilhões de metros cúbicos de gás natural por ano. Dessa
+                quantia, a Ucrânia é responsável pela produção de 20 bilhões, compra por volta de 36 bilhões de metros
+                cúbicos do Turcomenistão, e recebe cerca de 17 bilhões da Rússia, como pagamento pelo transporte de gás
+                para a Europa. O resto (de 6 a 8 bilhões) é adquirido da Rússia. Segundo o CIA's World Factbook, a
+                Ucrânia é o quarto maior importador e sexto maior consumidor de gás natural do mundo.</p>
         </div>
+
     </section>
-    
+
     <script src="main.js"></script>
+
 </body>
+
 </html>

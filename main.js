@@ -43,4 +43,5 @@ function darkMode() {
 function abrirMenu() {
     menuMobile.classList.toggle('checked')
     redesSociais.classList.toggle('checked')
+    body.classList.toggle('checked')
 }

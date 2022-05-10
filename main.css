@@ -9,15 +9,6 @@
   --switch-bg: #ffffff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 .darkMode {
   --bg: #2c2c2c;
   --header-color: #ffffff;
@@ -33,6 +24,15 @@ html {
 
 .darkMode svg path {
   fill: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -54,7 +54,7 @@ header {
           justify-content: space-between;
   color: var(--header-color);
   background: var(--bg-header);
-  height: 8vh;
+  height: 74px;
   width: 100%;
   text-decoration: none;
   position: fixed;
@@ -64,7 +64,7 @@ header a {
   text-decoration: none;
 }
 
-.logo {
+.logo a {
   margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,10 +72,6 @@ header a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.svg-folha {
-  width: 80px;
 }
 
 h1 {
@@ -99,36 +95,23 @@ h1 {
   transition: 2s;
 }
 
-#DarkMode {
-  display: none;
+.menuMobile.checked .linha1 {
+  -webkit-transform: rotate(-45deg) translate(0px, 10px);
+          transform: rotate(-45deg) translate(0px, 10px);
 }
 
-.labelDarkMode {
-  width: 30px;
-  height: 14px;
-  background: var(--switch-bg);
-  border-radius: 7px;
-  -webkit-transition: 1s;
-  transition: 1s;
+.menuMobile.checked .linha2 {
+  opacity: 0;
 }
 
-.checkboxBola {
-  width: 15px;
-  height: 14px;
-  border-radius: 7px;
-  background: var(--switch-color);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+.menuMobile.checked .linha3 {
+  -webkit-transform: rotate(45deg) translate(0px, -10px);
+          transform: rotate(45deg) translate(0px, -10px);
 }
 
-.menuNavegacaoMobile {
-  display: none;
-  color: var(--color);
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.redesSociais {
+.redesSociais,
+.redesSociaisLinks {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,9 +124,79 @@ h1 {
   margin-right: 20px;
 }
 
-.menuNavegacao {
+.redesSociais.checked {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.redesSociais.checked .redesSociaisLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.labelDarkMode {
+  width: 30px;
+  height: 14px;
+  background: var(--switch-bg);
+  border-radius: 7px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#checkboxDarkMode {
+  display: none;
+}
+
+.checkboxBola {
+  width: 15px;
+  height: 14px;
+  border-radius: 7px;
+  background: var(--switch-color);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.menuNavegacaoMobile {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menuNavegacaoMobile a {
+  display: none;
+  color: var(--color);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.paginaAtualMobile::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  margin-right: 5px;
+  background-color: var(--color);
+}
+
+.menuNavegacao ul {
+  list-style: none;
   padding-left: 20px;
-  height: 5vh;
+  height: 47px;
   background-color: var(--bg-nav);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,7 +208,7 @@ h1 {
   -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.6), 0 6px 10px rgba(0, 0, 0, 0.6);
           box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.6), 0 6px 10px rgba(0, 0, 0, 0.6);
   position: fixed;
-  top: 8vh;
+  top: 74px;
   width: 100%;
 }
 
@@ -183,37 +236,6 @@ h1 {
   border-bottom: solid var(--bg-header);
 }
 
-.redesSociais.checked {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menuMobile.checked .linha1 {
-  -webkit-transform: rotate(-45deg) translate(0px, 10px);
-          transform: rotate(-45deg) translate(0px, 10px);
-}
-
-.menuMobile.checked .linha2 {
-  opacity: 0;
-}
-
-.menuMobile.checked .linha3 {
-  -webkit-transform: rotate(45deg) translate(0px, -10px);
-          transform: rotate(45deg) translate(0px, -10px);
-}
-
-.paginaAtualMobile::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  margin-right: 5px;
-  background-color: var(--color);
-}
-
 section {
   height: 87vh;
   margin-left: 20px;
@@ -239,8 +261,8 @@ section p {
       flex-wrap: wrap;
 }
 
-.inicio {
-  padding-top: 13vh;
+#inicio {
+  padding-top: 121px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -254,12 +276,12 @@ section p {
           justify-content: center;
 }
 
-.inicio li {
+#inicio li {
   font-size: 28px;
 }
 
 .mudancasEconomicas {
-  padding-top: 13vh;
+  padding-top: 121px;
 }
 
 .mudancasEconomicas img {
@@ -269,14 +291,14 @@ section p {
   height: 358px;
 }
 
-.brasil img {
-  width: 400px;
-  height: 600px;
-}
-
 .inflacao img {
   width: 400px;
   height: 602px;
+}
+
+.brasil img {
+  width: 400px;
+  height: 600px;
 }
 
 .impactos img {
@@ -294,13 +316,13 @@ section p {
     width: 450px;
     height: 237px;
   }
-  .brasil img {
-    width: 350px;
-    height: 450px;
-  }
   .inflacao img {
     width: 300px;
     height: 452px;
+  }
+  .brasil img {
+    width: 350px;
+    height: 450px;
   }
   .impactos img {
     width: 300px;
@@ -313,10 +335,13 @@ section p {
 }
 
 @media (max-width: 900px) {
+  .menuMobile {
+    display: block;
+  }
   .redesSociais {
     display: none;
     position: absolute;
-    top: 8vh;
+    top: 74px;
     right: 0;
     height: 92vh;
     width: 50vw;
@@ -331,17 +356,10 @@ section p {
     -webkit-transition: 1s;
     transition: 1s;
   }
-  .youTube {
-    padding-bottom: 40px;
-  }
-  .menuNavegacaoMobile {
+  .menuNavegacaoMobile a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -358,8 +376,15 @@ section p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .menuMobile {
-    display: block;
+  .redesSociaisLinks {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .youTube {
+    padding-bottom: 40px;
   }
   .menuNavegacao {
     display: none;
@@ -402,6 +427,9 @@ section p {
   section p {
     text-align: justify;
   }
+  #inicio li {
+    font-size: 20px;
+  }
   .mudancasEconomicas img {
     width: 300px;
     height: 158px;
@@ -418,8 +446,27 @@ section p {
     width: 217px;
     height: 300px;
   }
-  .inicio li {
-    font-size: 20px;
+}
+
+@media (max-height: 740px) {
+  section {
+    height: auto;
+    padding-top: 245px;
+  }
+}
+
+@media (max-height: 570px) {
+  .redesSociais {
+    gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .redesSociaisLinks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=main.css.map */
