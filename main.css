@@ -462,7 +462,7 @@ section p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .redesSociais.checked.redesSociaisLinks {
+  .redesSociais.checked .redesSociaisLinks {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
