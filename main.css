@@ -456,13 +456,13 @@ section p {
 }
 
 @media (max-height: 570px) {
-  .redesSociais {
+  .redesSociais.checked {
     gap: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .redesSociaisLinks {
+  .redesSociais.checked.redesSociaisLinks {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
